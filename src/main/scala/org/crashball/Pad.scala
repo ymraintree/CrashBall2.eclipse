@@ -71,7 +71,7 @@ class Pad extends ActiveObject {
 
   def draw(canvas: Canvas, paint: Paint): Unit = {
     paint.setColor(Color.YELLOW)
-    canvas.drawRect(x, y, x + WIDE, y + HEIGHT, paint)
+    canvas.drawRect(x, y, x + WIDE - 1, y + HEIGHT, paint)
   }
 
   @Override def getRect: Rect = {
